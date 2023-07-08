@@ -4,11 +4,11 @@ function contar(){
     let passo =document.getElementById('txtp')
     let res = document.getElementById('res')
 
-    if(ini.value.length ==0|| fim.value.length ==0 || passo.value.length ==0){
+    if(ini.value.length == 0|| fim.value.length == 0 || passo.value.length == 0){
         window.alert('[ERRO] faltam dados')
         res.innerHTML='impossivel contar'
     }else{
-        res.innerHTML = 'Contando:'
+        res.innerHTML = 'Contando: <br>'
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
@@ -18,11 +18,33 @@ function contar(){
         }
         if (i<f){
         for (let c = i; c <= f ; c += p ){
-            res.innerHTML += '  $(c)  '
+            res.innerHTML += '  ${c}  '
 
         }
         }else {
         for (let c = i; c >= f ; c += p ){
-             res.innerHTML += '  $(c)  \u{1F449}'
+                res.innerHTML += '  ${c}  \u{1F449}'
     
     }}}}
+
+    function tabuada (){
+        let num = document.getElementById('txtn')
+        let tab = document.getElementById('seltab')  
+        if (num.value.length==0){
+          window.alert ('porfavor tente denovoe digite um numero')
+        }else {
+            let n = Number(num.value)
+            let c = 1
+            tab.innerHTML=''
+
+            while (c <=10){
+                let item = document.createElement ('option')
+                item.text = ${n} x ${c} = ${n*c}
+                item.value= tab${c}
+                tab.appendChild(item)
+                c++
+            }
+        }
+
+
+    }
