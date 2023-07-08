@@ -14,13 +14,10 @@ section{
     width: 500px;
     margin:auto ;
 
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.212);
 
 }
-div{
-    text-align: center;
-    padding: 8px;
-}
+
 footer{
     color:white ;
     text-align: center;
