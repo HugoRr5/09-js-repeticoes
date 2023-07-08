@@ -18,12 +18,12 @@ function contar(){
         }
         if (i<f){
         for (let c = i; c <= f ; c += p ){
-            res.innerHTML += '  ${c}  '
+            res.innerHTML +=  ` ${c}  `
 
         }
         }else {
         for (let c = i; c >= f ; c += p ){
-                res.innerHTML += '  ${c}  \u{1F449}'
+                res.innerHTML += ` ${c}  \u{1F449} `
     
     }}}}
 
@@ -39,8 +39,8 @@ function contar(){
 
             while (c <=10){
                 let item = document.createElement ('option')
-                item.text = ${n} x ${c} = ${n*c}
-                item.value= tab${c}
+                item.text = `${n} x ${c} = ${n*c}`
+                item.value= `tab${c}`
                 tab.appendChild(item)
                 c++
             }
