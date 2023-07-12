@@ -33,7 +33,7 @@ function contar(){
             window.alert ('porfavor tente denovo e digite um numero')
         }else {
              let item = document.createElement('option')
-             item.text= `${num} x ${c} = ${ n * c}`
+             item.text= `${n} x ${c} = ${ n * c}`
              tab.appendChild(item)
              c++
     
