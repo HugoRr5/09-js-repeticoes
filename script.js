@@ -32,12 +32,15 @@ function contar(){
         if (num.value.length==0){
             window.alert ('porfavor tente denovo e digite um numero')
         }else {
-             let item = document.createElement('option')
-             item.text= `${n} x ${c} = ${ n * c}`
-             tab.appendChild(item)
-             c++
+            let n = Number (num.value)
+            let c =1 
+            while(c <=10){
+                let item = document.createElement('option')
+                item.text= `${n} x ${c} = ${ n * c}`
+                tab.appendChild(item)
+                c++
     
+
+            } 
         }
-    
-    
-        }
+     }
